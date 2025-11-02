@@ -106,10 +106,11 @@ export default async (req, res) => {
                 };
 
                 try {
+                    console.log(`A tentar enviar e-mail para ${userEmail} com assunto: ${msg.subject}`); // NOVO LOG
                     await sgMail.send(msg);
                     console.log(`Relatório enviado para ${userEmail}`);
                 } catch (emailError) {
-                    console.error(`Erro ao enviar e-mail para ${userEmail}:`, emailError);
+                    console.error(`Erro ao enviar e-mail para ${userEmail}:`, emailError.response?.body || emailError.message || emailError); // LOG MELHORADO
                 }
             });
 
