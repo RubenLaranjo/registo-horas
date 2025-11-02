@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Projeto para registo de horas trabalhadas com Supabase e Vercel.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
