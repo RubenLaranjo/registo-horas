@@ -1,0 +1,17 @@
+{
+  "name": "registo-horas-projeto",
+  "version": "1.0.0",
+  "description": "Projeto para registo de horas trabalhadas com Supabase e Vercel.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.x.x",
+    "@sendgrid/mail": "^7.x.x",
+    "pdfkit": "^0.13.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
